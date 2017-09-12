@@ -1,11 +1,11 @@
 {
-  "name": "Ewok",
+  "name": "ewok",
   "homepage": "https://github.com/cmachu/ewok",
   "authors": [
     "Paweł <pawel.cmachowski@gmail.com>"
   ],
-  "description": "Ewok is a tiny, cute SCSS style sheet with classes and mixins. Like as every other, this Ewok will help you fade out, fade in, blink or glimpse!",
-  "main": "ewok.min.css",
+  "description": "Ewok is a tiny SCSS style sheet with classes and mixins. Like as every other, this Ewok will help you fade out, fade in, blink or glimpse!",
+  "main": "ewok.css",
   "keywords": [
     "sass",
     "scss",
