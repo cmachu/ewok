@@ -1,43 +1,54 @@
+/*
+  Default variables
+*/
+/*
+  Mixins!
+*/
+/*
+  Ewok Classes
+*/
 .ewok-fade-in {
-  animation: ewok-fade-in 1.8s linear 0s;
-  -moz-animation: ewok-fade-in 1.8s linear 0s;
+  opacity: 0;
+  animation: ewok-fade-in 1.8s linear 0s 1 normal forwards;
+  -moz-animation: ewok-fade-in 1.8s linear 0s 1 normal forwards;
   /* Firefox */
-  -webkit-animation: ewok-fade-in 1.8s linear 0s;
+  -webkit-animation: ewok-fade-in 1.8s linear 0s 1 normal forwards;
   /* Safari and Chrome */
-  -o-animation: ewok-fade-in 1.8s linear 0s;
+  -o-animation: ewok-fade-in 1.8s linear 0s 1 normal forwards;
   /* Opera */ }
 
 .ewok-fade-out {
-  opacity: 0;
-  animation: ewok-fade-in 1.8s linear 0s 1 reverse;
-  -moz-animation: ewok-fade-in 1.8s linear 0s 1 reverse;
+  opacity: 1;
+  animation: ewok-fade-out 1.8s linear 0s 1 normal forwards;
+  -moz-animation: ewok-fade-out 1.8s linear 0s 1 normal forwards;
   /* Firefox */
-  -webkit-animation: ewok-fade-in 1.8s linear 0s 1 reverse;
+  -webkit-animation: ewok-fade-out 1.8s linear 0s 1 normal forwards;
   /* Safari and Chrome */
-  -o-animation: ewok-fade-in 1.8s linear 0s 1 reverse;
+  -o-animation: ewok-fade-out 1.8s linear 0s 1 normal forwards;
   /* Opera */ }
 
 .ewok-blink {
-  animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
-  -moz-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
+  opacity: 1;
+  animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse forwards;
+  -moz-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse forwards;
   /* Firefox */
-  -webkit-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
+  -webkit-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse forwards;
   /* Safari and Chrome */
-  -o-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
+  -o-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse forwards;
   /* Opera */ }
 
 .ewok-glimpse {
   opacity: 0;
-  animation: ewok-fade-in 1.8s linear 0s 2 alternate;
-  -moz-animation: ewok-fade-in 1.8s linear 0s 2 alternate;
+  animation: ewok-fade-out 1.8s linear 0s 2 alternate-reverse forwards;
+  -moz-animation: ewok-fade-out 1.8s linear 0s 2 alternate-reverse forwards;
   /* Firefox */
-  -webkit-animation: ewok-fade-in 1.8s linear 0s 2 alternate;
+  -webkit-animation: ewok-fade-out 1.8s linear 0s 2 alternate-reverse forwards;
   /* Safari and Chrome */
-  -o-animation: ewok-fade-in 1.8s linear 0s 2 alternate;
+  -o-animation: ewok-fade-out 1.8s linear 0s 2 alternate-reverse forwards;
   /* Opera */ }
 
 /*
-  KeyFrames for fade in
+  KeyFrames - two animations for all effects
 */
 @keyframes ewok-fade-in {
   from {
@@ -62,5 +73,28 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+@keyframes ewok-fade-out {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-moz-keyframes ewok-fade-out {
+  /* Firefox */
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-webkit-keyframes ewok-fade-out {
+  /* Safari and Chrome */
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-o-keyframes ewok-fade-out {
+  /* Opera */
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
 
 /*# sourceMappingURL=ewook.css.map */
