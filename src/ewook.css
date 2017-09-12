@@ -1,0 +1,66 @@
+.ewok-fade-in {
+  animation: ewok-fade-in 1.8s linear 0s;
+  -moz-animation: ewok-fade-in 1.8s linear 0s;
+  /* Firefox */
+  -webkit-animation: ewok-fade-in 1.8s linear 0s;
+  /* Safari and Chrome */
+  -o-animation: ewok-fade-in 1.8s linear 0s;
+  /* Opera */ }
+
+.ewok-fade-out {
+  opacity: 0;
+  animation: ewok-fade-in 1.8s linear 0s 1 reverse;
+  -moz-animation: ewok-fade-in 1.8s linear 0s 1 reverse;
+  /* Firefox */
+  -webkit-animation: ewok-fade-in 1.8s linear 0s 1 reverse;
+  /* Safari and Chrome */
+  -o-animation: ewok-fade-in 1.8s linear 0s 1 reverse;
+  /* Opera */ }
+
+.ewok-blink {
+  animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
+  -moz-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
+  /* Firefox */
+  -webkit-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
+  /* Safari and Chrome */
+  -o-animation: ewok-fade-in 1.8s linear 0s 2 alternate-reverse;
+  /* Opera */ }
+
+.ewok-glimpse {
+  opacity: 0;
+  animation: ewok-fade-in 1.8s linear 0s 2 alternate;
+  -moz-animation: ewok-fade-in 1.8s linear 0s 2 alternate;
+  /* Firefox */
+  -webkit-animation: ewok-fade-in 1.8s linear 0s 2 alternate;
+  /* Safari and Chrome */
+  -o-animation: ewok-fade-in 1.8s linear 0s 2 alternate;
+  /* Opera */ }
+
+/*
+  KeyFrames for fade in
+*/
+@keyframes ewok-fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes ewok-fade-in {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes ewok-fade-in {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-o-keyframes ewok-fade-in {
+  /* Opera */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=ewook.css.map */

@@ -1,0 +1,70 @@
+$ewok-animation-time: 1.8s;
+$ewok-animation-delay: 0s;
+$ewok-animation-timing: linear;
+
+.ewok-fade-in{
+  animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay;
+  -moz-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay; /* Firefox */
+  -webkit-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay; /* Safari and Chrome */
+  -o-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay; /* Opera */
+}
+
+.ewok-fade-out{
+  opacity:0;
+  animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 1 reverse;
+  -moz-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 1 reverse; /* Firefox */
+  -webkit-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 1 reverse; /* Safari and Chrome */
+  -o-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 1 reverse; /* Opera */
+}
+
+.ewok-blink{
+  animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate-reverse;
+  -moz-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate-reverse; /* Firefox */
+  -webkit-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate-reverse; /* Safari and Chrome */
+  -o-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate-reverse; /* Opera */
+}
+
+.ewok-glimpse{
+  opacity:0;
+  animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate;
+  -moz-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate; /* Firefox */
+  -webkit-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate; /* Safari and Chrome */
+  -o-animation: ewok-fade-in $ewok-animation-time $ewok-animation-timing $ewok-animation-delay 2 alternate; /* Opera */
+}
+
+/*
+  KeyFrames for fade in
+*/
+
+@keyframes ewok-fade-in {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes ewok-fade-in { /* Firefox */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes ewok-fade-in { /* Safari and Chrome */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes ewok-fade-in { /* Opera */
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
