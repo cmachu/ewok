@@ -46,6 +46,11 @@ p span b{
     display: inline-block;
 }
 
+p a{
+    color:rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+
 .example-container{
     width:100%;
     margin:auto;
