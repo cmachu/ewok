@@ -5,7 +5,7 @@
     "Paweł <pawel.cmachowski@gmail.com>"
   ],
   "description": "Ewok is a tiny SCSS style sheet with classes and mixins. Like as every other, this Ewok will help you fade out, fade in, blink or glimpse!",
-  "main": "ewok.css",
+  "main": "dist/ewok.css",
   "keywords": [
     "sass",
     "scss",
