@@ -10,3 +10,6 @@ You can use mixins: `ewok-fade-in($time, $delay)`, `ewok-fade-out($time, $delay)
 
 ## See me on action!
 You can find me on Forest Moon of Endor <a href="https://cmachu.github.io/ewok/">https://cmachu.github.io/ewok/</a></p>
+
+## How to get one Ewok?
+You can install me via bower: `cmachu/ewok`
